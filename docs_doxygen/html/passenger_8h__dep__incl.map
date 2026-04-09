@@ -1,0 +1,8 @@
+<map id="passenger.h" name="passenger.h">
+<area shape="rect" id="node1" title="Описание структуры данных пассажира и перегрузка операторов сравнения." alt="" coords="113,5,213,32"/>
+<area shape="rect" id="node2" href="$main_8cpp.html" title="Главный файл тестирования алгоритмов сортировки." alt="" coords="131,155,213,181"/>
+<area shape="rect" id="node3" href="$sort__alg_8h.html" title="Объявление функций сортировки." alt="" coords="30,80,117,107"/>
+<area shape="rect" id="node5" href="$utils_8h.html" title="Утилиты для чтения и записи данных из CSV." alt="" coords="201,80,263,107"/>
+<area shape="rect" id="node4" href="$sort__alg_8cpp.html" title="Реализация алгоритмов сортировки." alt="" coords="5,155,107,181"/>
+<area shape="rect" id="node6" href="$utils_8cpp.html" title="Реализация утилит для работы с файлами." alt="" coords="237,155,315,181"/>
+</map>

@@ -1,0 +1,52 @@
+\hypertarget{utils_8h}{}\doxysection{Файл utils.\+h}
+\label{utils_8h}\index{utils.h@{utils.h}}
+
+
+Утилиты для чтения и записи данных из CSV.  
+
+
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include \char`\"{}passenger.\+h\char`\"{}}\newline
+Граф включаемых заголовочных файлов для utils.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=259pt]{utils_8h__incl}
+\end{center}
+\end{figure}
+Граф файлов, в которые включается этот файл\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=218pt]{utils_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{structPassenger}{Passenger}} $>$ \mbox{\hyperlink{utils_8h_a39b05ce1a51dcbb1d28b70c0681e94a9}{read\+Data}} (const std\+::string \&filename)
+\item 
+void \mbox{\hyperlink{utils_8h_aed24dcdd1cb92a87a29a46b13379ad49}{write\+Data}} (const std\+::string \&filename, const std\+::vector$<$ \mbox{\hyperlink{structPassenger}{Passenger}} $>$ \&data)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Утилиты для чтения и записи данных из CSV. 
+
+
+
+\doxysubsection{Функции}
+\mbox{\Hypertarget{utils_8h_a39b05ce1a51dcbb1d28b70c0681e94a9}\label{utils_8h_a39b05ce1a51dcbb1d28b70c0681e94a9}} 
+\index{utils.h@{utils.h}!readData@{readData}}
+\index{readData@{readData}!utils.h@{utils.h}}
+\doxysubsubsection{\texorpdfstring{readData()}{readData()}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{structPassenger}{Passenger}}$>$ read\+Data (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{filename }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{utils_8h_aed24dcdd1cb92a87a29a46b13379ad49}\label{utils_8h_aed24dcdd1cb92a87a29a46b13379ad49}} 
+\index{utils.h@{utils.h}!writeData@{writeData}}
+\index{writeData@{writeData}!utils.h@{utils.h}}
+\doxysubsubsection{\texorpdfstring{writeData()}{writeData()}}
+{\footnotesize\ttfamily void write\+Data (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{filename,  }\item[{const std\+::vector$<$ \mbox{\hyperlink{structPassenger}{Passenger}} $>$ \&}]{data }\end{DoxyParamCaption})}
+

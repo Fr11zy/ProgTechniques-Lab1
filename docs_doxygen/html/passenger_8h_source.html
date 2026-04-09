@@ -1,0 +1,115 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Лабораторная работа №1: Тестирование и сравнение алгоритмов сортировки для записей пассажиров авиакомпании: Исходный файл passenger.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Лабораторная работа №1: Тестирование и сравнение алгоритмов сортировки для записей пассажиров авиакомпании
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">passenger.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="passenger_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#ifndef PASSENGER_H</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#define PASSENGER_H</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="structPassenger.html">   16</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structPassenger.html">Passenger</a> {</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="structPassenger.html#abdb60f0f0a7502e3c5be523ca63a817f">   17</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structPassenger.html#abdb60f0f0a7502e3c5be523ca63a817f">flightNumber</a>;       </div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="structPassenger.html#aaf65ce191d05173aa63cd848b9dd04fd">   18</a></span>&#160;    std::string <a class="code" href="structPassenger.html#aaf65ce191d05173aa63cd848b9dd04fd">flightDate</a>; </div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="structPassenger.html#a19405e54b102df1d02fd52df112b6bff">   19</a></span>&#160;    std::string <a class="code" href="structPassenger.html#a19405e54b102df1d02fd52df112b6bff">fullName</a>;    </div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="structPassenger.html#ad04910f3d045e4eff0c6a6757cca49d5">   20</a></span>&#160;    std::string <a class="code" href="structPassenger.html#ad04910f3d045e4eff0c6a6757cca49d5">seatNumber</a>; </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="structPassenger.html#aab78b252c5b3c397dbffc38450d95956">   26</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="structPassenger.html#aab78b252c5b3c397dbffc38450d95956">operator&lt;</a>(<span class="keyword">const</span> <a class="code" href="structPassenger.html">Passenger</a>&amp; p)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="structPassenger.html#aaf65ce191d05173aa63cd848b9dd04fd">flightDate</a> != p.<a class="code" href="structPassenger.html#aaf65ce191d05173aa63cd848b9dd04fd">flightDate</a>) <span class="keywordflow">return</span> <a class="code" href="structPassenger.html#aaf65ce191d05173aa63cd848b9dd04fd">flightDate</a> &lt; p.<a class="code" href="structPassenger.html#aaf65ce191d05173aa63cd848b9dd04fd">flightDate</a>;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="structPassenger.html#abdb60f0f0a7502e3c5be523ca63a817f">flightNumber</a> != p.<a class="code" href="structPassenger.html#abdb60f0f0a7502e3c5be523ca63a817f">flightNumber</a>) <span class="keywordflow">return</span> <a class="code" href="structPassenger.html#abdb60f0f0a7502e3c5be523ca63a817f">flightNumber</a> &lt; p.<a class="code" href="structPassenger.html#abdb60f0f0a7502e3c5be523ca63a817f">flightNumber</a>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="structPassenger.html#a19405e54b102df1d02fd52df112b6bff">fullName</a> != p.<a class="code" href="structPassenger.html#a19405e54b102df1d02fd52df112b6bff">fullName</a>) <span class="keywordflow">return</span> <a class="code" href="structPassenger.html#a19405e54b102df1d02fd52df112b6bff">fullName</a> &lt; p.<a class="code" href="structPassenger.html#a19405e54b102df1d02fd52df112b6bff">fullName</a>;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="structPassenger.html#ad04910f3d045e4eff0c6a6757cca49d5">seatNumber</a> &lt; p.<a class="code" href="structPassenger.html#ad04910f3d045e4eff0c6a6757cca49d5">seatNumber</a>;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    }</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="structPassenger.html#a61d4e2e91a017f60f6f0d113c7bd81fc">   33</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="structPassenger.html#a61d4e2e91a017f60f6f0d113c7bd81fc">operator&gt;</a>(<span class="keyword">const</span> <a class="code" href="structPassenger.html">Passenger</a>&amp; p)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> p &lt; *<span class="keyword">this</span>; }</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="structPassenger.html#a50e15e41bace77c7c6e937c621e1ebb6">   34</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="structPassenger.html#a50e15e41bace77c7c6e937c621e1ebb6">operator&lt;=</a>(<span class="keyword">const</span> <a class="code" href="structPassenger.html">Passenger</a>&amp; p)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> !(*<span class="keyword">this</span> &gt; p); }</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="structPassenger.html#ae848d7e114b774aa3068cfa6e4bb5d11">   35</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="structPassenger.html#ae848d7e114b774aa3068cfa6e4bb5d11">operator&gt;=</a>(<span class="keyword">const</span> <a class="code" href="structPassenger.html">Passenger</a>&amp; p)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> !(*<span class="keyword">this</span> &lt; p); }</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="structPassenger.html#aca3d74e4d10ae849f6d66b4f3bc093b3">   36</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="structPassenger.html#aca3d74e4d10ae849f6d66b4f3bc093b3">operator==</a>(<span class="keyword">const</span> <a class="code" href="structPassenger.html">Passenger</a>&amp; p)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="structPassenger.html#aaf65ce191d05173aa63cd848b9dd04fd">flightDate</a> == p.<a class="code" href="structPassenger.html#aaf65ce191d05173aa63cd848b9dd04fd">flightDate</a> &amp;&amp; <a class="code" href="structPassenger.html#abdb60f0f0a7502e3c5be523ca63a817f">flightNumber</a> == p.<a class="code" href="structPassenger.html#abdb60f0f0a7502e3c5be523ca63a817f">flightNumber</a> &amp;&amp;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;               <a class="code" href="structPassenger.html#a19405e54b102df1d02fd52df112b6bff">fullName</a> == p.<a class="code" href="structPassenger.html#a19405e54b102df1d02fd52df112b6bff">fullName</a> &amp;&amp; <a class="code" href="structPassenger.html#ad04910f3d045e4eff0c6a6757cca49d5">seatNumber</a> == p.<a class="code" href="structPassenger.html#ad04910f3d045e4eff0c6a6757cca49d5">seatNumber</a>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    }</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="structPassenger.html#ac60c33fc22c06e0856c9eb3b2f699253">   40</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="structPassenger.html#ac60c33fc22c06e0856c9eb3b2f699253">operator!=</a>(<span class="keyword">const</span> <a class="code" href="structPassenger.html">Passenger</a>&amp; p)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> !(*<span class="keyword">this</span> == p);}</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;};</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// PASSENGER_H</span></div>
+<div class="ttc" id="astructPassenger_html"><div class="ttname"><a href="structPassenger.html">Passenger</a></div><div class="ttdoc">Данные о пассажире авиарейса</div><div class="ttdef"><b>Definition:</b> passenger.h:16</div></div>
+<div class="ttc" id="astructPassenger_html_a19405e54b102df1d02fd52df112b6bff"><div class="ttname"><a href="structPassenger.html#a19405e54b102df1d02fd52df112b6bff">Passenger::fullName</a></div><div class="ttdeci">std::string fullName</div><div class="ttdef"><b>Definition:</b> passenger.h:19</div></div>
+<div class="ttc" id="astructPassenger_html_a50e15e41bace77c7c6e937c621e1ebb6"><div class="ttname"><a href="structPassenger.html#a50e15e41bace77c7c6e937c621e1ebb6">Passenger::operator&lt;=</a></div><div class="ttdeci">bool operator&lt;=(const Passenger &amp;p) const</div><div class="ttdef"><b>Definition:</b> passenger.h:34</div></div>
+<div class="ttc" id="astructPassenger_html_a61d4e2e91a017f60f6f0d113c7bd81fc"><div class="ttname"><a href="structPassenger.html#a61d4e2e91a017f60f6f0d113c7bd81fc">Passenger::operator&gt;</a></div><div class="ttdeci">bool operator&gt;(const Passenger &amp;p) const</div><div class="ttdef"><b>Definition:</b> passenger.h:33</div></div>
+<div class="ttc" id="astructPassenger_html_aab78b252c5b3c397dbffc38450d95956"><div class="ttname"><a href="structPassenger.html#aab78b252c5b3c397dbffc38450d95956">Passenger::operator&lt;</a></div><div class="ttdeci">bool operator&lt;(const Passenger &amp;p) const</div><div class="ttdoc">Перегрузка оператора &lt;.</div><div class="ttdef"><b>Definition:</b> passenger.h:26</div></div>
+<div class="ttc" id="astructPassenger_html_aaf65ce191d05173aa63cd848b9dd04fd"><div class="ttname"><a href="structPassenger.html#aaf65ce191d05173aa63cd848b9dd04fd">Passenger::flightDate</a></div><div class="ttdeci">std::string flightDate</div><div class="ttdef"><b>Definition:</b> passenger.h:18</div></div>
+<div class="ttc" id="astructPassenger_html_abdb60f0f0a7502e3c5be523ca63a817f"><div class="ttname"><a href="structPassenger.html#abdb60f0f0a7502e3c5be523ca63a817f">Passenger::flightNumber</a></div><div class="ttdeci">int flightNumber</div><div class="ttdef"><b>Definition:</b> passenger.h:17</div></div>
+<div class="ttc" id="astructPassenger_html_ac60c33fc22c06e0856c9eb3b2f699253"><div class="ttname"><a href="structPassenger.html#ac60c33fc22c06e0856c9eb3b2f699253">Passenger::operator!=</a></div><div class="ttdeci">bool operator!=(const Passenger &amp;p) const</div><div class="ttdef"><b>Definition:</b> passenger.h:40</div></div>
+<div class="ttc" id="astructPassenger_html_aca3d74e4d10ae849f6d66b4f3bc093b3"><div class="ttname"><a href="structPassenger.html#aca3d74e4d10ae849f6d66b4f3bc093b3">Passenger::operator==</a></div><div class="ttdeci">bool operator==(const Passenger &amp;p) const</div><div class="ttdef"><b>Definition:</b> passenger.h:36</div></div>
+<div class="ttc" id="astructPassenger_html_ad04910f3d045e4eff0c6a6757cca49d5"><div class="ttname"><a href="structPassenger.html#ad04910f3d045e4eff0c6a6757cca49d5">Passenger::seatNumber</a></div><div class="ttdeci">std::string seatNumber</div><div class="ttdef"><b>Definition:</b> passenger.h:20</div></div>
+<div class="ttc" id="astructPassenger_html_ae848d7e114b774aa3068cfa6e4bb5d11"><div class="ttname"><a href="structPassenger.html#ae848d7e114b774aa3068cfa6e4bb5d11">Passenger::operator&gt;=</a></div><div class="ttdeci">bool operator&gt;=(const Passenger &amp;p) const</div><div class="ttdef"><b>Definition:</b> passenger.h:35</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

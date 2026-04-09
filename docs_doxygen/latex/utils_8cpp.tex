@@ -1,0 +1,46 @@
+\hypertarget{utils_8cpp}{}\doxysection{Файл utils.\+cpp}
+\label{utils_8cpp}\index{utils.cpp@{utils.cpp}}
+
+
+Реализация утилит для работы с файлами.  
+
+
+{\ttfamily \#include \char`\"{}utils.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+Граф включаемых заголовочных файлов для utils.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{utils_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{structPassenger}{Passenger}} $>$ \mbox{\hyperlink{utils_8cpp_a39b05ce1a51dcbb1d28b70c0681e94a9}{read\+Data}} (const std\+::string \&filename)
+\item 
+void \mbox{\hyperlink{utils_8cpp_aed24dcdd1cb92a87a29a46b13379ad49}{write\+Data}} (const std\+::string \&filename, const std\+::vector$<$ \mbox{\hyperlink{structPassenger}{Passenger}} $>$ \&data)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Реализация утилит для работы с файлами. 
+
+
+
+\doxysubsection{Функции}
+\mbox{\Hypertarget{utils_8cpp_a39b05ce1a51dcbb1d28b70c0681e94a9}\label{utils_8cpp_a39b05ce1a51dcbb1d28b70c0681e94a9}} 
+\index{utils.cpp@{utils.cpp}!readData@{readData}}
+\index{readData@{readData}!utils.cpp@{utils.cpp}}
+\doxysubsubsection{\texorpdfstring{readData()}{readData()}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{structPassenger}{Passenger}}$>$ read\+Data (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{filename }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{utils_8cpp_aed24dcdd1cb92a87a29a46b13379ad49}\label{utils_8cpp_aed24dcdd1cb92a87a29a46b13379ad49}} 
+\index{utils.cpp@{utils.cpp}!writeData@{writeData}}
+\index{writeData@{writeData}!utils.cpp@{utils.cpp}}
+\doxysubsubsection{\texorpdfstring{writeData()}{writeData()}}
+{\footnotesize\ttfamily void write\+Data (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{filename,  }\item[{const std\+::vector$<$ \mbox{\hyperlink{structPassenger}{Passenger}} $>$ \&}]{data }\end{DoxyParamCaption})}
+

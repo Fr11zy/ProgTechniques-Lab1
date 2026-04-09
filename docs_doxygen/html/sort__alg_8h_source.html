@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Лабораторная работа №1: Тестирование и сравнение алгоритмов сортировки для записей пассажиров авиакомпании: Исходный файл sort_alg.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Лабораторная работа №1: Тестирование и сравнение алгоритмов сортировки для записей пассажиров авиакомпании
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">sort_alg.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="sort__alg_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#ifndef SORTALG_H</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#define SORTALG_H</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="passenger_8h.html">passenger.h</a>&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keywordtype">void</span> <a class="code" href="sort__alg_8h.html#a6824c7a21c0308bc3e5f902d0f8136f7">bubbleSort</a>(std::vector&lt;Passenger&gt;&amp; arr);</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keywordtype">void</span> <a class="code" href="sort__alg_8h.html#a4dfdfba380792f3abfe0e5893c662470">insertionSort</a>(std::vector&lt;Passenger&gt;&amp; arr);</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keywordtype">void</span> <a class="code" href="sort__alg_8h.html#ab90486240a62d64967274db672765900">heapSort</a>(std::vector&lt;Passenger&gt;&amp; arr);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// SORTALG_H</span></div>
+<div class="ttc" id="apassenger_8h_html"><div class="ttname"><a href="passenger_8h.html">passenger.h</a></div><div class="ttdoc">Описание структуры данных пассажира и перегрузка операторов сравнения.</div></div>
+<div class="ttc" id="asort__alg_8h_html_a4dfdfba380792f3abfe0e5893c662470"><div class="ttname"><a href="sort__alg_8h.html#a4dfdfba380792f3abfe0e5893c662470">insertionSort</a></div><div class="ttdeci">void insertionSort(std::vector&lt; Passenger &gt; &amp;arr)</div><div class="ttdoc">Сортировка простой вставкой</div><div class="ttdef"><b>Definition:</b> sort_alg.cpp:22</div></div>
+<div class="ttc" id="asort__alg_8h_html_a6824c7a21c0308bc3e5f902d0f8136f7"><div class="ttname"><a href="sort__alg_8h.html#a6824c7a21c0308bc3e5f902d0f8136f7">bubbleSort</a></div><div class="ttdeci">void bubbleSort(std::vector&lt; Passenger &gt; &amp;arr)</div><div class="ttdoc">Сортировка пузырьком</div><div class="ttdef"><b>Definition:</b> sort_alg.cpp:8</div></div>
+<div class="ttc" id="asort__alg_8h_html_ab90486240a62d64967274db672765900"><div class="ttname"><a href="sort__alg_8h.html#ab90486240a62d64967274db672765900">heapSort</a></div><div class="ttdeci">void heapSort(std::vector&lt; Passenger &gt; &amp;arr)</div><div class="ttdoc">Пирамидальная сортировка</div><div class="ttdef"><b>Definition:</b> sort_alg.cpp:50</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

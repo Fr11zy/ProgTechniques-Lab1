@@ -1,0 +1,86 @@
+\hypertarget{sort__alg_8h}{}\doxysection{Файл sort\+\_\+alg.\+h}
+\label{sort__alg_8h}\index{sort\_alg.h@{sort\_alg.h}}
+
+
+Объявление функций сортировки.  
+
+
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include \char`\"{}passenger.\+h\char`\"{}}\newline
+Граф включаемых заголовочных файлов для sort\+\_\+alg.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=220pt]{sort__alg_8h__incl}
+\end{center}
+\end{figure}
+Граф файлов, в которые включается этот файл\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=156pt]{sort__alg_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{sort__alg_8h_a6824c7a21c0308bc3e5f902d0f8136f7}{bubble\+Sort}} (std\+::vector$<$ \mbox{\hyperlink{structPassenger}{Passenger}} $>$ \&arr)
+\begin{DoxyCompactList}\small\item\em Сортировка пузырьком \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{sort__alg_8h_a4dfdfba380792f3abfe0e5893c662470}{insertion\+Sort}} (std\+::vector$<$ \mbox{\hyperlink{structPassenger}{Passenger}} $>$ \&arr)
+\begin{DoxyCompactList}\small\item\em Сортировка простой вставкой \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{sort__alg_8h_ab90486240a62d64967274db672765900}{heap\+Sort}} (std\+::vector$<$ \mbox{\hyperlink{structPassenger}{Passenger}} $>$ \&arr)
+\begin{DoxyCompactList}\small\item\em Пирамидальная сортировка \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Объявление функций сортировки. 
+
+
+
+\doxysubsection{Функции}
+\mbox{\Hypertarget{sort__alg_8h_a6824c7a21c0308bc3e5f902d0f8136f7}\label{sort__alg_8h_a6824c7a21c0308bc3e5f902d0f8136f7}} 
+\index{sort\_alg.h@{sort\_alg.h}!bubbleSort@{bubbleSort}}
+\index{bubbleSort@{bubbleSort}!sort\_alg.h@{sort\_alg.h}}
+\doxysubsubsection{\texorpdfstring{bubbleSort()}{bubbleSort()}}
+{\footnotesize\ttfamily void bubble\+Sort (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{structPassenger}{Passenger}} $>$ \&}]{arr }\end{DoxyParamCaption})}
+
+
+
+Сортировка пузырьком 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em arr} & Ссылка на вектор для сортировки \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{sort__alg_8h_ab90486240a62d64967274db672765900}\label{sort__alg_8h_ab90486240a62d64967274db672765900}} 
+\index{sort\_alg.h@{sort\_alg.h}!heapSort@{heapSort}}
+\index{heapSort@{heapSort}!sort\_alg.h@{sort\_alg.h}}
+\doxysubsubsection{\texorpdfstring{heapSort()}{heapSort()}}
+{\footnotesize\ttfamily void heap\+Sort (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{structPassenger}{Passenger}} $>$ \&}]{arr }\end{DoxyParamCaption})}
+
+
+
+Пирамидальная сортировка 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em arr} & Ссылка на вектор для сортировки \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{sort__alg_8h_a4dfdfba380792f3abfe0e5893c662470}\label{sort__alg_8h_a4dfdfba380792f3abfe0e5893c662470}} 
+\index{sort\_alg.h@{sort\_alg.h}!insertionSort@{insertionSort}}
+\index{insertionSort@{insertionSort}!sort\_alg.h@{sort\_alg.h}}
+\doxysubsubsection{\texorpdfstring{insertionSort()}{insertionSort()}}
+{\footnotesize\ttfamily void insertion\+Sort (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{structPassenger}{Passenger}} $>$ \&}]{arr }\end{DoxyParamCaption})}
+
+
+
+Сортировка простой вставкой 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em arr} & Ссылка на вектор для сортировки \\
+\hline
+\end{DoxyParams}

@@ -1,0 +1,5 @@
+<map id="utils.h" name="utils.h">
+<area shape="rect" id="node1" title="Утилиты для чтения и записи данных из CSV." alt="" coords="67,5,130,32"/>
+<area shape="rect" id="node2" href="$main_8cpp.html" title="Главный файл тестирования алгоритмов сортировки." alt="" coords="5,80,88,107"/>
+<area shape="rect" id="node3" href="$utils_8cpp.html" title="Реализация утилит для работы с файлами." alt="" coords="112,80,189,107"/>
+</map>

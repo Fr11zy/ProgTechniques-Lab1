@@ -1,0 +1,115 @@
+\hypertarget{structPassenger}{}\doxysection{Структура Passenger}
+\label{structPassenger}\index{Passenger@{Passenger}}
+
+
+Данные о пассажире авиарейса  
+
+
+
+
+{\ttfamily \#include $<$passenger.\+h$>$}
+
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{structPassenger_aab78b252c5b3c397dbffc38450d95956}{operator$<$}} (const \mbox{\hyperlink{structPassenger}{Passenger}} \&p) const
+\begin{DoxyCompactList}\small\item\em Перегрузка оператора $<$. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{structPassenger_a61d4e2e91a017f60f6f0d113c7bd81fc}{operator$>$}} (const \mbox{\hyperlink{structPassenger}{Passenger}} \&p) const
+\item 
+bool \mbox{\hyperlink{structPassenger_a50e15e41bace77c7c6e937c621e1ebb6}{operator$<$=}} (const \mbox{\hyperlink{structPassenger}{Passenger}} \&p) const
+\item 
+bool \mbox{\hyperlink{structPassenger_ae848d7e114b774aa3068cfa6e4bb5d11}{operator$>$=}} (const \mbox{\hyperlink{structPassenger}{Passenger}} \&p) const
+\item 
+bool \mbox{\hyperlink{structPassenger_aca3d74e4d10ae849f6d66b4f3bc093b3}{operator==}} (const \mbox{\hyperlink{structPassenger}{Passenger}} \&p) const
+\item 
+bool \mbox{\hyperlink{structPassenger_ac60c33fc22c06e0856c9eb3b2f699253}{operator!=}} (const \mbox{\hyperlink{structPassenger}{Passenger}} \&p) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Открытые атрибуты}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{structPassenger_abdb60f0f0a7502e3c5be523ca63a817f}{flight\+Number}}
+\item 
+std\+::string \mbox{\hyperlink{structPassenger_aaf65ce191d05173aa63cd848b9dd04fd}{flight\+Date}}
+\item 
+std\+::string \mbox{\hyperlink{structPassenger_a19405e54b102df1d02fd52df112b6bff}{full\+Name}}
+\item 
+std\+::string \mbox{\hyperlink{structPassenger_ad04910f3d045e4eff0c6a6757cca49d5}{seat\+Number}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Данные о пассажире авиарейса 
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{structPassenger_ac60c33fc22c06e0856c9eb3b2f699253}\label{structPassenger_ac60c33fc22c06e0856c9eb3b2f699253}} 
+\index{Passenger@{Passenger}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!Passenger@{Passenger}}
+\doxysubsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily bool Passenger\+::operator!= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structPassenger}{Passenger}} \&}]{p }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structPassenger_aab78b252c5b3c397dbffc38450d95956}\label{structPassenger_aab78b252c5b3c397dbffc38450d95956}} 
+\index{Passenger@{Passenger}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!Passenger@{Passenger}}
+\doxysubsubsection{\texorpdfstring{operator$<$()}{operator<()}}
+{\footnotesize\ttfamily bool Passenger\+::operator$<$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structPassenger}{Passenger}} \&}]{p }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Перегрузка оператора $<$. 
+
+Сравнение по полям\+: дата рейса -\/$>$ номер рейса -\/$>$ ФИО -\/$>$ номер места. \mbox{\Hypertarget{structPassenger_a50e15e41bace77c7c6e937c621e1ebb6}\label{structPassenger_a50e15e41bace77c7c6e937c621e1ebb6}} 
+\index{Passenger@{Passenger}!operator$<$=@{operator$<$=}}
+\index{operator$<$=@{operator$<$=}!Passenger@{Passenger}}
+\doxysubsubsection{\texorpdfstring{operator$<$=()}{operator<=()}}
+{\footnotesize\ttfamily bool Passenger\+::operator$<$= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structPassenger}{Passenger}} \&}]{p }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structPassenger_aca3d74e4d10ae849f6d66b4f3bc093b3}\label{structPassenger_aca3d74e4d10ae849f6d66b4f3bc093b3}} 
+\index{Passenger@{Passenger}!operator==@{operator==}}
+\index{operator==@{operator==}!Passenger@{Passenger}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool Passenger\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structPassenger}{Passenger}} \&}]{p }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structPassenger_a61d4e2e91a017f60f6f0d113c7bd81fc}\label{structPassenger_a61d4e2e91a017f60f6f0d113c7bd81fc}} 
+\index{Passenger@{Passenger}!operator$>$@{operator$>$}}
+\index{operator$>$@{operator$>$}!Passenger@{Passenger}}
+\doxysubsubsection{\texorpdfstring{operator$>$()}{operator>()}}
+{\footnotesize\ttfamily bool Passenger\+::operator$>$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structPassenger}{Passenger}} \&}]{p }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structPassenger_ae848d7e114b774aa3068cfa6e4bb5d11}\label{structPassenger_ae848d7e114b774aa3068cfa6e4bb5d11}} 
+\index{Passenger@{Passenger}!operator$>$=@{operator$>$=}}
+\index{operator$>$=@{operator$>$=}!Passenger@{Passenger}}
+\doxysubsubsection{\texorpdfstring{operator$>$=()}{operator>=()}}
+{\footnotesize\ttfamily bool Passenger\+::operator$>$= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structPassenger}{Passenger}} \&}]{p }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Данные класса}
+\mbox{\Hypertarget{structPassenger_aaf65ce191d05173aa63cd848b9dd04fd}\label{structPassenger_aaf65ce191d05173aa63cd848b9dd04fd}} 
+\index{Passenger@{Passenger}!flightDate@{flightDate}}
+\index{flightDate@{flightDate}!Passenger@{Passenger}}
+\doxysubsubsection{\texorpdfstring{flightDate}{flightDate}}
+{\footnotesize\ttfamily std\+::string Passenger\+::flight\+Date}
+
+\mbox{\Hypertarget{structPassenger_abdb60f0f0a7502e3c5be523ca63a817f}\label{structPassenger_abdb60f0f0a7502e3c5be523ca63a817f}} 
+\index{Passenger@{Passenger}!flightNumber@{flightNumber}}
+\index{flightNumber@{flightNumber}!Passenger@{Passenger}}
+\doxysubsubsection{\texorpdfstring{flightNumber}{flightNumber}}
+{\footnotesize\ttfamily int Passenger\+::flight\+Number}
+
+\mbox{\Hypertarget{structPassenger_a19405e54b102df1d02fd52df112b6bff}\label{structPassenger_a19405e54b102df1d02fd52df112b6bff}} 
+\index{Passenger@{Passenger}!fullName@{fullName}}
+\index{fullName@{fullName}!Passenger@{Passenger}}
+\doxysubsubsection{\texorpdfstring{fullName}{fullName}}
+{\footnotesize\ttfamily std\+::string Passenger\+::full\+Name}
+
+\mbox{\Hypertarget{structPassenger_ad04910f3d045e4eff0c6a6757cca49d5}\label{structPassenger_ad04910f3d045e4eff0c6a6757cca49d5}} 
+\index{Passenger@{Passenger}!seatNumber@{seatNumber}}
+\index{seatNumber@{seatNumber}!Passenger@{Passenger}}
+\doxysubsubsection{\texorpdfstring{seatNumber}{seatNumber}}
+{\footnotesize\ttfamily std\+::string Passenger\+::seat\+Number}
+
+
+
+Объявления и описания членов структуры находятся в файле\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{passenger_8h}{passenger.\+h}}\end{DoxyCompactItemize}
