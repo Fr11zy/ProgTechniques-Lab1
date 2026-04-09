@@ -1,6 +1,5 @@
 sorting_lab
 *.csv
-*.png
 
 __pycache__/
 venv/
