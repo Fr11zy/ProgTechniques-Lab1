@@ -35,22 +35,18 @@ int main() {
         double timeBubble = -1, timeInsert = -1;
 
         // Bubble Sort 
-        if (n <= 25000) {
-            vector<Passenger> testData = dataSlice;
-            auto start = high_resolution_clock::now();
-            bubbleSort(testData);
-            auto stop = high_resolution_clock::now();
-            timeBubble = duration_cast<milliseconds>(stop - start).count();
-        }
+        vector<Passenger> testData = dataSlice;
+        auto start = high_resolution_clock::now();
+        bubbleSort(testData);
+        auto stop = high_resolution_clock::now();
+        timeBubble = duration_cast<milliseconds>(stop - start).count();
 
         // Insertion Sort
-        if (n <= 25000) {
-            vector<Passenger> testData = dataSlice;
-            auto start = high_resolution_clock::now();
-            insertionSort(testData);
-            auto stop = high_resolution_clock::now();
-            timeInsert = duration_cast<milliseconds>(stop - start).count();
-        }
+        vector<Passenger> testData = dataSlice;
+        auto start = high_resolution_clock::now();
+        insertionSort(testData);
+        auto stop = high_resolution_clock::now();
+        timeInsert = duration_cast<milliseconds>(stop - start).count();
 
         // Heap Sort
         vector<Passenger> testDataHeap = dataSlice;
