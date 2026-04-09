@@ -2,6 +2,7 @@
  * @file passenger.h
  * @brief Описание структуры данных пассажира и перегрузка операторов сравнения.
  */
+
 #ifndef PASSENGER_H
 #define PASSENGER_H
 
@@ -9,7 +10,7 @@
 
 /**
  * @struct Passenger
- * @brief Данные о пассажире авиарейса (Вариант 11).
+ * @brief Данные о пассажире авиарейса
  */
 
 struct Passenger {
