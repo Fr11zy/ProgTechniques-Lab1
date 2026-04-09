@@ -11,7 +11,7 @@ def generate_data(filename, count=100000):
     
     start_date = datetime.now()
     
-    print(f"Генерация {count} записей в {filename} (без использования Faker)...")
+    print(f"Генерация {count} записей в {filename}...")
     
     with open(filename, mode='w', newline='', encoding='utf-8') as file:
         writer = csv.writer(file)
