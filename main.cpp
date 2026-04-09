@@ -9,7 +9,7 @@
 #include <iomanip>
 #include <algorithm>
 #include "passenger.h"
-#include "sorts.h"
+#include "sort_alg.h"
 #include "utils.h"
 
 using namespace std;
@@ -32,37 +32,36 @@ int main() {
         if (n > allData.size()) break;
         
         vector<Passenger> dataSlice(allData.begin(), allData.begin() + n);
-        double timeBubble = -1, timeInsert = -1;
 
         // Bubble Sort 
-        vector<Passenger> testData = dataSlice;
-        auto start = high_resolution_clock::now();
-        bubbleSort(testData);
-        auto stop = high_resolution_clock::now();
-        timeBubble = duration_cast<milliseconds>(stop - start).count();
+        vector<Passenger> testDataBubble = dataSlice;
+        auto startBubble = high_resolution_clock::now();
+        bubbleSort(testDataBubble);
+        auto stopBubble = high_resolution_clock::now();
+        double timeBubble = duration_cast<milliseconds>(stopBubble - startBubble).count();
 
         // Insertion Sort
-        vector<Passenger> testData = dataSlice;
-        auto start = high_resolution_clock::now();
-        insertionSort(testData);
-        auto stop = high_resolution_clock::now();
-        timeInsert = duration_cast<milliseconds>(stop - start).count();
+        vector<Passenger> testDataInsert = dataSlice;
+        auto startInsert = high_resolution_clock::now();
+        insertionSort(testDataInsert);
+        auto stopInsert = high_resolution_clock::now();
+        double timeInsert = duration_cast<milliseconds>(stopInsert - startInsert).count();
 
         // Heap Sort
         vector<Passenger> testDataHeap = dataSlice;
-        auto startH = high_resolution_clock::now();
+        auto startHeap = high_resolution_clock::now();
         heapSort(testDataHeap);
-        auto stopH = high_resolution_clock::now();
-        double timeHeap = duration_cast<milliseconds>(stopH - startH).count();
+        auto stopHeap = high_resolution_clock::now();
+        double timeHeap = duration_cast<milliseconds>(stopHeap - startHeap).count();
 
         // std::sort
         vector<Passenger> testDataStd = dataSlice;
-        auto startS = high_resolution_clock::now();
+        auto startStd = high_resolution_clock::now();
         sort(testDataStd.begin(), testDataStd.end());
-        auto stopS = high_resolution_clock::now();
-        double timeStd = duration_cast<milliseconds>(stopS - startS).count();
-
-        // Сохраним отсортированный образец
+        auto stopStd = high_resolution_clock::now();
+        double timeStd = duration_cast<milliseconds>(stopStd - startStd).count();
+        
+        // Отсортированный образец для наглядности
         if (n == 1000) writeData("sorted_output.csv", testDataStd);
 
         cout << setw(10) << n << setw(15) << timeBubble << setw(15) << timeInsert 
