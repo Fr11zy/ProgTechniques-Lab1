@@ -16,7 +16,7 @@ std::vector<Passenger> readData(const std::string& filename) {
     }
 
     std::string line, word;
-    std::getline(file, line); // Пропуск заголовка
+    std::getline(file, line);
 
     while (std::getline(file, line)) {
         std::stringstream ss(line);
