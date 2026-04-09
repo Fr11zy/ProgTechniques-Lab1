@@ -49,7 +49,7 @@ python gen_data.py && g++ -O3 main.cpp sort_alg.cpp utils.cpp -o sorting_lab && 
 ---
 
 ## Документация Doxygen
-[![Docs](docs/html/index.html)](docs/html/index.html)
+[![Docs](docs_doxygen/html/index.html)](docs_doxygen/html/index.html)
 
 ## Исходный код
 [GitHub](https://github.com/Fr11zy/ProgTechniques-Lab1)
