@@ -48,6 +48,13 @@ python gen_data.py && g++ -O3 main.cpp sort_alg.cpp utils.cpp -o sorting_lab && 
 * `python plots.py` - построение графиков и сохранение в sort_times.png
 ---
 
+## Документация Doxygen
+[![Docs](docs/html/index.html)](docs/html/index.html)
+
+## Исходный код
+[GitHub](https://github.com/Fr11zy/ProgTechniques-Lab1)
+
 ## Наглядное представление скорости алгоритмов для сравнения в миллисекундах на графике
 !![sort_times.png](sort_times.png)
+
 
