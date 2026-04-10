@@ -19,6 +19,8 @@ def plot_results():
     plt.title('Зависимость времени сортировки от размерности массива')
     plt.xlabel('Количество элементов')
     plt.ylabel('Время (мс)')
+    plt.xscale('log')
+    plt.yscale('log')
     plt.legend()
     plt.grid(True)
     plt.tight_layout()

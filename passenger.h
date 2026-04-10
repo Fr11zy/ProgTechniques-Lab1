@@ -29,7 +29,7 @@ struct Passenger {
         if (fullName != p.fullName) return fullName < p.fullName;
         return seatNumber < p.seatNumber;
     }
-
+    
     bool operator>(const Passenger& p) const { return p < *this; }
     bool operator<=(const Passenger& p) const { return !(*this > p); }
     bool operator>=(const Passenger& p) const { return !(*this < p); }
