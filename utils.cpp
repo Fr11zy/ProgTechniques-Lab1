@@ -4,34 +4,38 @@
  */
 #include "utils.h"
 #include <fstream>
-#include <sstream>
 #include <iostream>
+#include <cstdio>
 
 std::vector<Passenger> readData(const std::string& filename) {
     std::vector<Passenger> data;
-    std::ifstream file(filename);
-    if (!file.is_open()) {
+    FILE* file = fopen(filename.c_str(), "r");
+    if (!file) {
         std::cerr << "Ошибка: не удалось открыть файл " << filename << "\n";
         return data;
     }
 
-    std::string line, word;
-    std::getline(file, line);
+    char buffer[512];
+    if (fgets(buffer, sizeof(buffer), file) == nullptr) {
+        fclose(file);
+        return data;
+    }
 
-    while (std::getline(file, line)) {
-        std::stringstream ss(line);
+    char date[256];
+    int number;
+    char name[256];
+    char seat[256];
+
+    while (fscanf(file, "%255[^,],%d,%255[^,],%255[^\r\n] ", date, &number, name, seat) == 4) {
         Passenger p;
-        
-        std::getline(ss, p.flightDate, ',');
-        
-        std::getline(ss, word, ',');
-        p.flightNumber = std::stoi(word);
-        
-        std::getline(ss, p.fullName, ',');
-        std::getline(ss, p.seatNumber, ',');
-        
+        p.flightDate = date;
+        p.flightNumber = number;
+        p.fullName = name;
+        p.seatNumber = seat;
         data.push_back(p);
     }
+
+    fclose(file);
     return data;
 }
 
